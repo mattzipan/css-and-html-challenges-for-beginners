@@ -6,7 +6,7 @@ I built a few challenges for people to try to replicate in order to make the fir
 
 All excersizes are just off the top of my head and may not teach the best practices. This can be neglected, as it is more important to just get in front of the keyboard and try to solve really _any_ challenge. Googeling the best practices later on, is easy todo, however The first challenge is to break that mental block and start c.o.d.i.n.g.
 
-#### View Exercises [here](./index.html)
+#### View Exercises [here](https://mattzipan.github.io/css-and-html-challenges-for-beginners/overview.html)
 
 #### Get Started
 
