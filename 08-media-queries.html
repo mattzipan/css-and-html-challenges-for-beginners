@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Media queries</title>
+    <style>
+      /* START resetting browser */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* END resetting browser */
+
+      /* START actual styles for the callenge */
+
+      body {
+        text-align: center;
+      }
+
+      .box {
+        margin: 50px auto;
+        width: 20%;
+        height: 6rem;
+        border: 5px solid goldenrod;
+        border-radius: 6px;
+      }
+
+      .first {
+        background: lightcoral;
+      }
+
+      .second {
+        background: lightgreen;
+      }
+
+      .third {
+        background: lightblue;
+      }
+      /* note that the order of the med queries matters: if you put the first blog after the second one, it would overwrite the previous rules and the page would be shown differently. Thats because the code is executed subsequentially by the computer */
+      @media all and (min-width: 800px) {
+        body {
+          background: lightskyblue;
+        }
+
+        .box {
+          margin: 50px auto;
+          width: 50%;
+          height: 10rem;
+          border: 5px solid goldenrod;
+          border-radius: 4px;
+        }
+      }
+
+      @media all and (min-width: 1200px) {
+        body {
+          background: lightgray;
+        }
+
+        .box {
+          margin: 50px auto;
+          width: 10rem;
+          height: 10rem;
+          border: 5px solid goldenrod;
+          border-radius: 50%;
+        }
+      }
+
+      /* END actual styles for the callenge */
+    </style>
+  </head>
+  <body>
+    <div class="box first">1</div>
+    <div class="box second">2</div>
+    <div class="box third">3</div>
+  </body>
+</html>
