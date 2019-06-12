@@ -101,6 +101,119 @@
     <li><a href="07-sizing.html">07. Box sizing and the box model</a></li>
     <li><a href="08-media-queries.html">08. Media queries for responsive websites</a></li>
     <!-- <li><a href=""></a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Buttons</title>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-MQXV4J6');</script>
+    <!-- End Google Tag Manager -->
+    <style>
+      /* START resetting browser */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(#dfd319 0%, #d72fb9 100%) no-repeat 50% 50% / 100% 100%;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      /* END resetting browser */
+
+      /* START actual styles for the callenge */
+
+      /* middle line */
+      .hamburger {
+        position: relative;
+        background: white;
+        height: 2px;
+        width: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 200ms ease;
+      }
+
+      /* top and bottom line on top */
+      .hamburger:before,
+      .hamburger:after {
+        content: "";
+        position: absolute;
+        top: -9px;
+        height: 2px;
+        width: 100%;
+        background: inherit;
+      }
+
+      /* move one line down */
+      .hamburger:after {
+        top: 9px;
+      }
+
+      .field {
+        position: relative;
+        background: transparent;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* turn hamburger */
+      .field:active>.hamburger {
+        transform: rotate(135deg);
+      }
+
+      /* move the lines to form a cross */
+      .field:active>.hamburger:before,
+      .field:active>.hamburger:after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+
+      /* END actual styles for the callenge */
+    </style>
+    </head>
+
+    <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQXV4J6" height="0" width="0"
+          style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      <ul class="callenges">
+        <li><a href="01-positioning-elements.html">01. Positioning elements with margin</a></li>
+        <li><a href="02-positioning-elements.html">02. Positioning elements with margin</a></li>
+        <li><a href="03-positioning-elements.html">03. Positioning elements with margin</a></li>
+        <li><a href="button-circle.html">04. Button and circle with pseudo selectors</a></li>
+        <li><a href="05-gradients-img-links-shadow.html">05.Gradients, images, links and shadows</a></li>
+        <li><a href="06-fonts-and-pseudo-selectors.html">06. Fonts and pseudo-selectors</a></li>
+        <li><a href="07-sizing.html">07. Box sizing and the box model</a></li>
+        <li><a href="08-media-queries.html">08. Media queries for responsive websites</a></li>
+        <!--<li><a href=""></a></li>
       <li><a href=""></a></li>
       <li><a href=""></a></li>
       <li><a href=""></a></li>
@@ -118,7 +231,7 @@
       <li><a href=""></a></li>
       <li><a href=""></a></li> -->
 
-    </div>
-</body>
+        </div>
+    </body>
 
 </html>
