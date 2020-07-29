@@ -1,57 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Positioning elements - 02</title>
-    <style>
-      /* START resetting browser */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      /* END resetting browser */
 
-      /* START actual styles for the callenge */
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Positioning elements - 02</title>
+  <style>
+    /* START resetting browser */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-      .container {
-        background: lightgray;
-      }
+    /* END resetting browser */
 
-      .logo {
-        background: lightcoral;
-        width: 60px;
-        height: 60px;
-        padding: 1.2rem 0;
-        text-align: center;
-      }
+    /* START actual styles for the callenge */
 
-      .middle {
-        margin: auto;
-      }
+    .container {
+      background: lightgray;
+    }
 
-      .half-left {
-        margin-left: 25%;
-      }
+    .logo {
+      background: lightcoral;
+      width: 60px;
+      height: 60px;
+      padding: 1.2rem 0;
+      text-align: center;
+    }
 
-      .left {
-        margin-right: auto;
-      }
+    .middle {
+      margin: auto;
+    }
 
-      .right {
-        margin-left: auto;
-      }
+    .half-left {
+      margin-left: 25%;
+    }
 
-      /* END actual styles for the callenge */
-    </style>
-  </head>
-  <body>
-    <div class="container"><div class="logo middle">💯</div></div>
-    <div class="container"><div class="logo left">😼</div></div>
-    <div class="container"><div class="logo right">🤓</div></div>
-    <div class="container"><div class="logo half-left">🤘</div></div>
-  </body>
+    .left {
+      margin-right: auto;
+    }
+
+    .right {
+      margin-left: auto;
+    }
+
+    /* END actual styles for the callenge */
+  </style>
+  <!-- Matomo -->
+  <script type="text/javascript">
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "https://mattzipan.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.type = 'text/javascript'; g.async = true; g.src = '//cdn.matomo.cloud/mattzipan.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo middle">💯</div>
+  </div>
+  <div class="container">
+    <div class="logo left">😼</div>
+  </div>
+  <div class="container">
+    <div class="logo right">🤓</div>
+  </div>
+  <div class="container">
+    <div class="logo half-left">🤘</div>
+  </div>
+</body>
+
 </html>
