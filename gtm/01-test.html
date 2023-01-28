@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>GTM Test 01</title>
+  <style>
+    /* START resetting browser */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* END resetting browser */
+
+    /* START actual styles for the callenge */
+
+    html {
+      background: linear-gradient(#00978d 0%, #e11555 100%) no-repeat 50% 50% / 100% 100%;
+      min-height: 100vh;
+      /* notice how I am using text-align: center to put the block in the middle. That is only possible, because the div.container element is display: block by default. Any block element can be centered like text with text-align:center in the parent element. However, if somebody was to set it to display: inline, the centering would break. Also, if a <span> element instead of a <div> element was used, it would not work. Span elements are display: inline by default. Try it out ;-) */
+      text-align: center;
+    }
+
+    .container {
+      /* Since i could already center this block due to it being a block-element, i simply set a margin and center it that way. */
+      margin-top: 25%;
+    }
+
+    .font {
+      color: white;
+      font-size: 3rem;
+    }
+
+    .sans {
+      font-family: -apple-system, BlinkMacSystemFont, "Arial", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue";
+      font-weight: 700;
+    }
+
+    .sans:before {
+      content: "I am sans";
+    }
+
+    .sans:after,
+    .serif:after {
+      content: ".";
+    }
+
+    .serif {
+      font-family: Georgia, serif;
+      font-weight: 100;
+    }
+
+    .serif:before {
+      content: "I am serif";
+    }
+
+    .wing:after {
+      content: ".";
+    }
+
+    .wing {
+      font-family: Wingdings, serif;
+      font-weight: 100;
+    }
+
+    .wing:before {
+      content: "YETI";
+    }
+
+    /* END actual styles for the callenge */
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WMJ3JPJ');</script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+  <div class="container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FPs6uEDdD4A" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <p class="font sans"></p>
+    <p class="font serif"></p>
+    <p class="font wing"></p>
+  </div>
+</body>
+
+</html>

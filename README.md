@@ -15,3 +15,6 @@ All excersizes are just off the top of my head and may not teach the best practi
 - If you get stuck, try to solve it alone first
 - When you feel tired and frustrated, look into the sourcecode of the file and adapt your code
 - Memorize the missing piece and try to build the challenge again from scratch
+
+#### GTM Testing
+01 [Query Param Filtering](https://mattzipan.github.io/css-and-html-challenges-for-beginners/gtm/01-test.html)
