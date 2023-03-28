@@ -18,3 +18,4 @@ All excersizes are just off the top of my head and may not teach the best practi
 
 #### GTM Testing
 01 [Query Param Filtering](https://mattzipan.github.io/css-and-html-challenges-for-beginners/gtm/01-test.html)
+02 [Test GA4 Config Tag](https://mattzipan.github.io/css-and-html-challenges-for-beginners/gtm/02-test-ga-config-tag.html)
