@@ -91,7 +91,11 @@
       })(window, document, 'script', 'dataLayer', 'GTM-5LL45RH');</script>
   -->
   <!-- gtag -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9WQ7FQ7ZGQ"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9WQ7FQ7ZGQ">
+    // load library
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+  </script>
   <script>
     window.dataLayer.push({
       'event': 'virtual-page-view',
